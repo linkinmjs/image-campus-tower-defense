@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=4 uid="uid://cw86ptg4nuhh8"]
+[gd_scene load_steps=9 format=4 uid="uid://cw86ptg4nuhh8"]
 
 [ext_resource type="Texture2D" uid="uid://b44lqg7cnmwty" path="res://assets/kenney_tower-defense-top-down/Tilesheet/towerDefense_tilesheet.png" id="1_sugp2"]
 [ext_resource type="PackedScene" uid="uid://dt6e84fwawgo8" path="res://scenes/plane.tscn" id="2_0wfyh"]
 [ext_resource type="Script" uid="uid://b3wsrmksxdmyv" path="res://scripts/horde_spawner.gd" id="2_sugp2"]
+[ext_resource type="PackedScene" uid="uid://iwpyh144rruk" path="res://scenes/tower.tscn" id="4_jyhfs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tefeu"]
 texture = ExtResource("1_sugp2")
@@ -347,3 +348,6 @@ position = Vector2(-20, 130)
 
 [node name="RouteB" type="Path2D" parent="."]
 curve = SubResource("Curve2D_0wfyh")
+
+[node name="Tower" parent="." instance=ExtResource("4_jyhfs")]
+position = Vector2(839, 288)
