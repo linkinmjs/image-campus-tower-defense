@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=4 uid="uid://cw86ptg4nuhh8"]
 
 [ext_resource type="Texture2D" uid="uid://b44lqg7cnmwty" path="res://assets/kenney_tower-defense-top-down/Tilesheet/towerDefense_tilesheet.png" id="1_sugp2"]
-[ext_resource type="Script" uid="uid://b3wsrmksxdmyv" path="res://scripts/horde_spawner.gd" id="2_sugp2"]
+[ext_resource type="PackedScene" uid="uid://wdoi7acjhgpk" path="res://scenes/horde_spawner.tscn" id="2_sugp2"]
 [ext_resource type="PackedScene" uid="uid://iwpyh144rruk" path="res://scenes/tower.tscn" id="4_jyhfs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tefeu"]
@@ -431,12 +431,8 @@ tile_set = SubResource("TileSet_o6xl0")
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
 
-[node name="HordeSpawner" type="Node2D" parent="." node_paths=PackedStringArray("routes")]
-script = ExtResource("2_sugp2")
+[node name="HordeSpawner" parent="." node_paths=PackedStringArray("routes") instance=ExtResource("2_sugp2")]
 routes = [NodePath("../RouteA"), NodePath("../RouteB")]
-
-[node name="SpawnTimer" type="Timer" parent="HordeSpawner"]
-autostart = true
 
 [node name="RouteA" type="Path2D" parent="."]
 curve = SubResource("Curve2D_sugp2")
@@ -450,7 +446,7 @@ curve = SubResource("Curve2D_jyhfs")
 position = Vector2(879, 253)
 
 [node name="Tower2" parent="Towers" instance=ExtResource("4_jyhfs")]
-position = Vector2(395, 513)
+position = Vector2(512, 637)
 
 [node name="Tower3" parent="Towers" instance=ExtResource("4_jyhfs")]
-position = Vector2(498, 147)
+position = Vector2(446, 314)

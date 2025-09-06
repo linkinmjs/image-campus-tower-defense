@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://wdoi7acjhgpk"]
+
+[ext_resource type="Script" uid="uid://b3wsrmksxdmyv" path="res://scripts/horde_spawner.gd" id="1_pqj2v"]
+
+[node name="HordeSpawner" type="Node2D" node_paths=PackedStringArray("routes")]
+script = ExtResource("1_pqj2v")
+routes = [null, null]
+
+[node name="SpawnTimer" type="Timer" parent="."]
+autostart = true

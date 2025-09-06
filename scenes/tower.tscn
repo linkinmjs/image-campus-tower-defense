@@ -20,6 +20,9 @@ rotation = 1.5708
 scale = Vector2(1.45909, 1.45909)
 texture = ExtResource("2_qrbg1")
 
+[node name="Marker2D" type="Marker2D" parent="Cannon"]
+position = Vector2(55, 0)
+
 [node name="Base" type="Sprite2D" parent="."]
 texture_filter = 1
 texture = ExtResource("3_jfguu")
@@ -31,5 +34,4 @@ collision_layer = 0
 shape = SubResource("CircleShape2D_o6xl0")
 
 [node name="ShootTimer" type="Timer" parent="."]
-wait_time = 0.1
 autostart = true

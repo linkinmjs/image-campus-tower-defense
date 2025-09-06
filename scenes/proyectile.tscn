@@ -22,15 +22,16 @@ animations = [{
 radius = 17.0
 
 [node name="Proyectile" type="Area2D"]
-rotation = -1.5708
+top_level = true
 collision_layer = 0
 script = ExtResource("1_krr7y")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
+rotation = -1.5708
 sprite_frames = SubResource("SpriteFrames_4yp5a")
-frame_progress = 0.425516
+frame_progress = 0.394738
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 11)
+position = Vector2(8, 0)
 shape = SubResource("CircleShape2D_krr7y")
