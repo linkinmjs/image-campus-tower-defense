@@ -445,13 +445,12 @@ curve = SubResource("Curve2D_sugp2")
 curve = SubResource("Curve2D_jyhfs")
 
 [node name="Towers" type="Node2D" parent="."]
-visible = false
 
 [node name="Tower" parent="Towers" instance=ExtResource("4_jyhfs")]
-position = Vector2(839, 288)
+position = Vector2(879, 253)
 
 [node name="Tower2" parent="Towers" instance=ExtResource("4_jyhfs")]
-position = Vector2(387, 496)
+position = Vector2(395, 513)
 
 [node name="Tower3" parent="Towers" instance=ExtResource("4_jyhfs")]
-position = Vector2(385, 275)
+position = Vector2(498, 147)

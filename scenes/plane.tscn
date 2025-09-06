@@ -7,6 +7,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_206p1"]
 
 [node name="Plane" type="PathFollow2D"]
+texture_filter = 1
 loop = false
 script = ExtResource("1_206p1")
 
