@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="clase-5"
+config/name="image-campus-tower-defense"
 run/main_scene="uid://cw86ptg4nuhh8"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
@@ -26,6 +26,7 @@ enabled=PackedStringArray("res://addons/extendable_inspector/plugin.cfg", "res:/
 [layer_names]
 
 2d_physics/layer_1="enemy"
+2d_physics/layer_2="proyectile"
 
 [rendering]
 

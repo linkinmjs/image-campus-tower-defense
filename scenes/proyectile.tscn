@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3 uid="uid://cs1c5fjg3odxn"]
+
+[ext_resource type="Script" uid="uid://drchs862oa5sa" path="res://scripts/proyectile.gd" id="1_krr7y"]
+[ext_resource type="Texture2D" uid="uid://b1suq31j8u0p2" path="res://assets/kenney_tower-defense-top-down/PNG/Retina/towerDefense_tile295.png" id="1_mybm1"]
+[ext_resource type="Texture2D" uid="uid://b8sle06bo7cuo" path="res://assets/kenney_tower-defense-top-down/PNG/Retina/towerDefense_tile296.png" id="2_krr7y"]
+[ext_resource type="Texture2D" uid="uid://ci2tymcuvqjr8" path="res://assets/kenney_tower-defense-top-down/PNG/Retina/towerDefense_tile297.png" id="3_t4g83"]
+[ext_resource type="Texture2D" uid="uid://bfuec6qvgkwlu" path="res://assets/kenney_tower-defense-top-down/PNG/Retina/towerDefense_tile298.png" id="4_r8a4h"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4yp5a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mybm1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_krr7y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_t4g83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_r8a4h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_krr7y"]
+radius = 17.0
+
+[node name="Proyectile" type="Area2D"]
+rotation = -1.5708
+collision_layer = 0
+script = ExtResource("1_krr7y")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_4yp5a")
+frame = 2
+frame_progress = 0.682714
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 11)
+shape = SubResource("CircleShape2D_krr7y")
